@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class article extends Model
 {
     use HasFactory;
+    public function categorie(){
+        return $this->belongsTo(categorie::class,'idCategory','id');
+    }
 }

@@ -16,6 +16,31 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/categorie')" :active="request()->routeIs('categorie')">
+                        {{ __('Categoria') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/article')" :active="request()->routeIs('article')">
+                        {{ __('Articulo') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/income')" :active="request()->routeIs('income')">
+                        {{ __('Ingreso') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/person')" :active="request()->routeIs('person')">
+                        {{ __('Persona') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/sale')" :active="request()->routeIs('sale')">
+                        {{ __('Ventas') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
