@@ -32,6 +32,11 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/income_detail')" :active="request()->routeIs('income_detail')">
+                        {{ __('Detalle de Ingreso') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="url('dashboard/person')" :active="request()->routeIs('person')">
                         {{ __('Persona') }}
                     </x-nav-link>

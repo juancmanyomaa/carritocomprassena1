@@ -31,6 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('/dashboard/person',personController::class);
     Route::resource('/dashboard/sale',saleController::class);
     Route::resource('/dashboard/sale_detail',sale_detailController::class);
+    Route::get('dashboard/income/{id}/detalle', [IncomeController::class, 'detalle'])->name('income.detalle');
 
 });
 
