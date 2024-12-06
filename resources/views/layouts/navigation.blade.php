@@ -27,23 +27,28 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="url('dashboard/income')" :active="request()->routeIs('income')">
+                    <x-nav-link :href="url('dashboard/income')" :active="request()->routeIs('income.*')">
                         {{ __('Ingreso') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="url('dashboard/income_detail')" :active="request()->routeIs('income_detail')">
+                    <x-nav-link :href="url('dashboard/income_detail')" :active="request()->routeIs('income_detail.*')">
                         {{ __('Detalle de Ingreso') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="url('dashboard/person')" :active="request()->routeIs('person')">
+                    <x-nav-link :href="url('dashboard/person')" :active="request()->routeIs('person.*')">
                         {{ __('Persona') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="url('dashboard/sale')" :active="request()->routeIs('sale')">
+                    <x-nav-link :href="url('dashboard/sale')" :active="request()->routeIs('sale.*')">
                         {{ __('Ventas') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/role')" :active="request()->routeIs('role.*')">
+                        {{ __('Roles') }}
                     </x-nav-link>
                 </div>
             </div>

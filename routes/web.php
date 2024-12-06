@@ -10,6 +10,7 @@ use App\Http\Controllers\income_detailController;
 use App\Http\Controllers\personController;
 use App\Http\Controllers\saleController;
 use App\Http\Controllers\sale_detailController;
+use App\Http\Controllers\RoleController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -31,6 +32,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('/dashboard/person',personController::class);
     Route::resource('/dashboard/sale',saleController::class);
     Route::resource('/dashboard/sale_detail',sale_detailController::class);
+    Route::resource('/dashboard/role',RoleController::class);
     Route::get('dashboard/income/{id}/detalle', [IncomeController::class, 'detalle'])->name('income.detalle');
 
 });
